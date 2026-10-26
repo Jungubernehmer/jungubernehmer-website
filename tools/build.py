@@ -536,7 +536,6 @@ home_main = f"""
     </div>
     {rows([
         ("", "Destín Clothing", "Markenaufbau von null an: Social-Media-Auftritt und Content für eine Modemarke."),
-        ("", "Bam Bam Keb'up", "Social-Media-Auftritt für ein Food-Konzept, damit der Name bei jedem hängen bleibt."),
     ], link=False)}
     <p class="actions" style="margin-top:32px"><a class="btn btn--ink" href="/referenzen/">Alle Referenzen</a></p>
   </div>
@@ -681,7 +680,7 @@ add(
 
 # ---- Referenzen
 ref_main = f"""
-{page_hero([("Start", "/"), ("Referenzen", None)], "Daran habe ich gearbeitet", "Eine Auswahl meiner Projekte. Weitere zeige ich dir gern im Gespräch.", actions=False)}
+{page_hero([("Start", "/"), ("Referenzen", None)], "Daran habe ich gearbeitet", "Ein Projekt aus meiner Arbeit. Weitere zeige ich dir gern im Gespräch.", actions=False)}
 <section class="section">
   <div class="wrap">
     <div class="two-col">
@@ -694,24 +693,12 @@ ref_main = f"""
     </div>
   </div>
 </section>
-<section class="section section--line">
-  <div class="wrap">
-    <div class="two-col">
-      <div class="two-col__head"><h2>Bam Bam Keb'up</h2><p>Food-Konzept</p></div>
-      <div>
-        <p class="lead">Ein Name, der hängen bleibt.</p>
-        <p>Für Bam Bam Keb'up sorge ich dafür, dass auf dem Social-Media-Account Unterhaltung geboten wird und sich der Name bei den Leuten einprägt.</p>
-        <p><strong>Schwerpunkte:</strong> Social-Media-Marketing, Food-Content, Entertainment</p>
-      </div>
-    </div>
-  </div>
-</section>
 {cta_band()}
 """
 add(
     "/referenzen/",
     "Referenzen und Projekte | JUNGÜBERNEHMER",
-    "Eine Auswahl meiner Projekte: Markenaufbau für eine Modemarke und Social-Media-Marketing für ein Food-Konzept. Jetzt Projekt besprechen.",
+    "Ein Projekt aus meiner Arbeit: Markenaufbau für die Modemarke Destín Clothing. Weitere Referenzen zeige ich dir im Gespräch.",
     ref_main,
     crumbs=[("Start", "/"), ("Referenzen", "/referenzen/")],
 )
@@ -747,7 +734,7 @@ imp_main = f"""
   <div class="wrap">
     <div class="prose">
       <h2>Angaben gemäß § 5 DDG</h2>
-      <p>{BRAND}<br>Inhaber: {OWNER}<br>{ph("Straße und Hausnummer")}<br>{ph("PLZ und Ort")}</p>
+      <p>{BRAND}<br>Inhaber: {OWNER}<br>Turnhallestraße 3<br>72250 Freudenstadt</p>
 
       <h2>Kontakt</h2>
       <p>Telefon: <a href="tel:{PHONE_TEL}">{PHONE_SHOW}</a><br>E-Mail: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
@@ -756,7 +743,7 @@ imp_main = f"""
       <p>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung). Eine Umsatzsteuer-Identifikationsnummer wird deshalb nicht geführt.</p>
 
       <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-      <p>{OWNER}, Anschrift wie oben.</p>
+      <p>{OWNER}, Turnhallestraße 3, 72250 Freudenstadt.</p>
 
       <h2>Verbraucherstreitbeilegung</h2>
       <p>Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
@@ -788,11 +775,11 @@ dsg_main = f"""
   <div class="wrap">
     <div class="prose">
       <h2>1. Verantwortlicher</h2>
-      <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>{OWNER}, {BRAND}<br>{ph("Straße und Hausnummer")}, {ph("PLZ und Ort")}<br>Telefon: {PHONE_SHOW}<br>E-Mail: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+      <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>{OWNER}, {BRAND}<br>Turnhallestraße 3, 72250 Freudenstadt<br>Telefon: {PHONE_SHOW}<br>E-Mail: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
 
       <h2>2. Hosting und Server-Logfiles</h2>
-      <p>Diese Website wird bei folgendem Anbieter gehostet: {ph("Name und Anschrift des Hosting-Anbieters eintragen")}.</p>
-      <p>Beim Aufruf der Seiten verarbeitet der Hosting-Anbieter automatisch technische Daten in Server-Logfiles: IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Seite, Browsertyp und Betriebssystem sowie die zuvor besuchte Seite. Das ist nötig, um die Seite auszuliefern und sicher zu betreiben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem stabilen und sicheren Betrieb). Die Logfiles werden nach kurzer Zeit gelöscht, sofern der Hosting-Anbieter nichts anderes angibt.</p>
+      <p>Diese Website wird über GitHub Pages gehostet. Anbieter ist die GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Seite kann deine IP-Adresse an GitHub-Server übermittelt und dort verarbeitet werden, auch in den USA. GitHub ist nach eigenen Angaben unter dem EU-U.S. Data Privacy Framework zertifiziert. Weitere Informationen findest du in der Datenschutzerklärung von GitHub.</p>
+      <p>Beim Aufruf der Seiten kann der Hosting-Anbieter automatisch technische Daten in Server-Logfiles speichern: IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Seite, Browsertyp und Betriebssystem sowie die zuvor besuchte Seite. Das ist nötig, um die Seite auszuliefern und sicher zu betreiben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem stabilen und sicheren Betrieb). Die Logfiles werden nach kurzer Zeit gelöscht, sofern der Hosting-Anbieter nichts anderes angibt.</p>
 
       <h2>3. Keine Cookies, kein Tracking</h2>
       <p>Diese Website setzt keine Cookies und nutzt keine Analyse-, Tracking- oder Werbedienste. Die verwendete Schriftart wird von diesem Server geladen. Es findet keine Verbindung zu Google Fonts oder anderen Schriftdiensten statt.</p>
